@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: d398cf084d851094c91b71f12ff74203
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - breaksound: {instanceID: 0}
+  - blockSparklesVFX: {instanceID: 0}
+  - shootingPowerPrefab: {instanceID: 0}
+  - paddleExpandPrefab: {instanceID: 0}
+  - doubleBallPrefab: {instanceID: 0}
+  - shieldPowerPrefab: {instanceID: 0}
+  - lifePowerPrefab: {instanceID: 0}
+  - fastBallPrefab: {instanceID: 0}
+  - slowBallPrefab: {instanceID: 0}
+  - laserPrefab: {instanceID: 0}
+  - bombPrefab: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

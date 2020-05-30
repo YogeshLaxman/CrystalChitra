@@ -1,0 +1,183 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1265051900913130}
+  m_IsPrefabAsset: 1
+--- !u!1 &1265051900913130
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4595200049542290}
+  - component: {fileID: 212080654359394566}
+  - component: {fileID: 60299289821062556}
+  - component: {fileID: 114073884363985186}
+  - component: {fileID: 95211152213762952}
+  m_Layer: 8
+  m_Name: Paddle
+  m_TagString: Paddle
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4595200049542290
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1265051900913130}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.3, y: 0.75, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!60 &60299289821062556
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1265051900913130}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4, y: 2.25}
+    newSize: {x: 4, y: 2.25}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -1.67, y: 0.28}
+      - {x: -2, y: -0.13}
+      - {x: -1.85, y: -0.26}
+      - {x: -0.018068314, y: -0.61109674}
+      - {x: 1.85, y: -0.26}
+      - {x: 2, y: -0.13}
+      - {x: 1.67, y: 0.28}
+      - {x: 0, y: 0.38}
+--- !u!95 &95211152213762952
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1265051900913130}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2df6474eb79083147822a62cd48190c4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114073884363985186
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1265051900913130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80e5052cb3f17964c8b9e7b981818146, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minX: 1
+  maxX: 15
+  screenWidthInUnits: 16
+  moveSpeed: 18
+  laserPrefab: {fileID: 1812868880678558, guid: c39837b2797cfef4eac723c4db5f360a,
+    type: 2}
+  ballPrefab: {fileID: 1193250105024918, guid: a55b9a2dd8e100946b4cd899193f2649, type: 2}
+  actualShieldPrefab: {fileID: 1812822049117300, guid: 6a7d3973d997bd64a8f5478d54ec5b8b,
+    type: 2}
+  actualLaserSPrefab: {fileID: 1812868880678558, guid: 8547daa25c7961143955586897b9724f,
+    type: 2}
+  BombPrefab: {fileID: 1618425242160746, guid: fc3a1dbdbeb3aec4eacf09cf87a8fd37, type: 2}
+  projectileSpeed: 20
+  paddleDestroySound: {fileID: 8300000, guid: bc09b3188dd18754abc413f295ff99b4, type: 3}
+  laserSmallSound: {fileID: 8300000, guid: 90f595b9ba530b1418e947741d19e715, type: 3}
+  laserBigSound: {fileID: 8300000, guid: 396bffeefd6751f418ddab85e438d914, type: 3}
+  paddleContractSound: {fileID: 8300000, guid: 8837fdc29a89bb24b8f39b79c9307a32, type: 3}
+  paddleExpandSound: {fileID: 8300000, guid: 09553ca9357a06247af57030ecb06ef3, type: 3}
+  doubleBallSound: {fileID: 8300000, guid: 393d068081812af4aa5b21caa52bb89e, type: 3}
+  shieldActiveSound: {fileID: 8300000, guid: f78b1ee4fee9d59419bb7774f932ec27, type: 3}
+  fastBallSound: {fileID: 8300000, guid: 5fac9a629a32fbb4ab20ea7565574836, type: 3}
+  slowBallSound: {fileID: 8300000, guid: 2ed3efc384534f44c88a2269a9023a29, type: 3}
+  lifePowerSound: {fileID: 8300000, guid: e29942cc61ada6c4986c5d4dde54f11e, type: 3}
+  laserPowerSound: {fileID: 8300000, guid: 8e9ca5acf3b5e574db7b8f10d581b063, type: 3}
+  laserSPowerSound: {fileID: 8300000, guid: 38475780ebd74ae43aa421c1bea2ca19, type: 3}
+  halfPaddleLength: 2
+  paddleBounce:
+  - {fileID: 8300000, guid: 430a2db5c774a304589cc788eb42a806, type: 3}
+  - {fileID: 8300000, guid: d8a80b0f310adfb459882884639cf44a, type: 3}
+  - {fileID: 8300000, guid: 777e9442591f8074f8010e5f7654efb3, type: 3}
+  - {fileID: 8300000, guid: 073f74af4ea595b499fdb10fb7e2a538, type: 3}
+--- !u!212 &212080654359394566
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1265051900913130}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 7380aaa9e5f0d894ebbfde5a6564b65b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 4, y: 2.25}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
